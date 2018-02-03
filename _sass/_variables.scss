@@ -1,2 +1,21 @@
+// Custom
 $custom-font-size: 20px;
+
+// Bootstrap Overrides
+
+// Colors
+$blue: #313E99;
+
+// Fonts
+$font-family-sans-serif: 'IBM Plex Sans', Arial, sans-serif;
+
+// Buttons
+// $btn-padding-x: 5rem;
+// $btn-padding-y: 3rem;
+// $btn-padding-x-sm:               .5rem !default;
+// $btn-padding-y-sm:               .25rem !default;
+//
+// $btn-padding-x-lg:               5rem;
+// $btn-padding-y-lg:               3rem;
+
 @import "../node_modules/bootstrap/scss/variables";

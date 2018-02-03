@@ -3,6 +3,11 @@
 
 @import "variables.scss";
 @import "bootstrap/scss/bootstrap.scss";
+@import "@ibm/type/scss/ibm-type.scss";
+
+@import "typography.scss";
+@import "header.scss";
+@import "footer.scss";
 
 .content {
   font-size: $custom-font-size;
