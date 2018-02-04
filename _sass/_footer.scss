@@ -1,0 +1,149 @@
+footer {
+  @include media-breakpoint-down(xs) {
+    text-align: center;
+  }
+
+  font-size: 14px;
+}
+
+.primary-footer {
+  padding: 40px 0;
+  @include make-col-ready();
+  background-color: $brand-primary;
+  color: $white;
+
+  a {
+    &:hover,
+    &:active {
+      color: $teal;
+    }
+  }
+
+  &__brand-info {
+    @include make-col(12);
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(6);
+    }
+
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+    }
+
+    .navbar-brand {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__company-nav {
+    @include make-col(12);
+
+    @include media-breakpoint-up(sm) {
+      @include make-col-offset(1);
+      @include make-col(5);
+    }
+
+    @include media-breakpoint-up(md) {
+      @include make-col-offset(2);
+      @include make-col(2);
+    }
+
+    @include media-breakpoint-only(sm) {
+      text-align: right;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin: 40px 0;
+    }
+
+    .nav-link {
+      padding: 5px 0;
+      color: $white;
+      text-transform: uppercase;
+    }
+  }
+
+  &__company-nav-title,
+  &__contact-info-title {
+    @extend %footer-section-header;
+  }
+
+  &__contact-info {
+    @include make-col(12);
+
+    @include media-breakpoint-up(md) {
+      @include make-col-offset(1);
+      @include make-col(3);
+    }
+
+    a {
+      color: $white;
+    }
+  }
+}
+
+.secondary-footer {
+  @include make-col-ready();
+  margin: 20px 0 5px 0;
+
+  .nav {
+    @include media-breakpoint-down(sm) {
+      margin: auto;
+    }
+  }
+
+  &__copyright {
+    @include make-col(12);
+    color: #747474;
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(9);
+    }
+  }
+
+  &__social-media-list {
+    @include make-col(12);
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(3);
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-right: 15px;
+      display: inline-block;
+
+      &:nth-last-child(1){
+        margin-right: 0;
+      }
+    }
+
+    a {
+      @include border-radius(50%);
+      background-color: $brand-primary;
+      display: block;
+      color: $white;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+
+      &:hover,
+      &:active {
+        background-color: $teal;
+      }
+
+      svg {
+        position: relative;
+        top: 5px;
+      }
+    }
+  }
+}

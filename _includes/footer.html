@@ -1,24 +1,58 @@
-<footer class="site-footer">
-  <div class="container">
-    <div class="div">
-      White logo
-      <p>{{ site.description | escape }}</p>
-    </div>
-    <div class="">
-      <div class="">
-        Company
+<footer>
+  <div class="primary-footer">
+    <div class="container">
+      <div class="row">
+        <div class="primary-footer__brand-info">
+          <a class="navbar-brand" href="/"><img src="{{ "/assets/svg/indus-logo-white.svg" | relative_url }}" /></a>
+          <p>{{ site.description | escape }}</p>
+        </div>
+        <div class="primary-footer__company-nav">
+          <div class="primary-footer__company-nav-title">
+            Company
+          </div>
+          <ul class="nav flex-column">
+            {% include company-nav.html %}
+          </ul>
+        </div>
+        <div class="primary-footer__contact-info">
+          <div class="primary-footer__contact-info-title">
+            Contact
+          </div>
+          <div class="primary-footer__contact-info-content">
+            <p>
+              2243 San Diego Ave, Ste 200<br />
+              San Diego, CA 92110
+            </p>
+            <p>
+              Phone: (619) 299-2555<br />
+              Fax: (619) 299-2444<br />
+              <a href="mailto:info@industechnology.com">info@industechnology.com</a><br />
+            </p>
+          </div>
+        </div>
       </div>
-      <ul class="nav flex-column">
-        {% include company-nav.html %}
-      </ul>
     </div>
   </div>
-  <div class="container">
-    <div class="div">
-      <div>
-        Copyright &copy; 1991-{{ 'now' | date: "%Y" }} INDUS Technology, Inc. All Rights Reserved.
+  <div class="secondary-footer">
+    <div class="container">
+      <div class="row">
+        <div class="secondary-footer__copyright">
+          Copyright &copy; 1991-{{ 'now' | date: "%Y" }} INDUS Technology, Inc. All Rights Reserved.
+        </div>
+        <div class="secondary-footer__social-media-list">
+          <ul>
+            <li class="nav-item">
+              <a href="https://www.facebook.com/INDUSTechnologyJobs/" target="blank"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="https://twitter.com/INDUS_Jobs" target="blank"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.linkedin.com/company/55506/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
       </div>
-      {% include social.html %}
     </div>
   </div>
 </footer>
