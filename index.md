@@ -5,5 +5,3 @@
 layout: home
 title: page title
 ---
-
-hello world

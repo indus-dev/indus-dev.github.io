@@ -1,0 +1,42 @@
+.home-hero {
+  background-color: $brand-primary;
+  color: $white;
+}
+
+.company-intro {
+  background-color: $brand-primary;
+  color: $white;
+  text-align: center;
+}
+
+.news-jobs {
+  background-color: $soft-blue;
+
+  &__hot-jobs,
+  &__latest-news {
+    @include make-col(12);
+    @include media-breakpoint-up(sm) {
+       @include make-col(6);
+    }
+  }
+}
+
+.what-we-do {
+  text-align: center;
+}
+
+.engineering-it,
+.program-management,
+.financial-management {
+  &__content,
+  &__photo {
+    @include make-col(12);
+    @include media-breakpoint-up(sm) {
+       @include make-col(6);
+    }
+  }
+}
+
+.program-management {
+  background-color: #F8F8F8;
+}

@@ -7480,5 +7480,50 @@ footer {
         position: relative;
         top: 5px; }
 
+.home-hero {
+  background-color: #313E99;
+  color: #fff; }
+
+.company-intro {
+  background-color: #313E99;
+  color: #fff;
+  text-align: center; }
+
+.news-jobs {
+  background-color: #E8EFF7; }
+  .news-jobs__hot-jobs, .news-jobs__latest-news {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%; }
+    @media (min-width: 576px) {
+      .news-jobs__hot-jobs, .news-jobs__latest-news {
+        flex: 0 0 50%;
+        width: 50%;
+        max-width: 50%; } }
+
+.what-we-do {
+  text-align: center; }
+
+.engineering-it__content, .engineering-it__photo,
+.program-management__content,
+.program-management__photo,
+.financial-management__content,
+.financial-management__photo {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%; }
+  @media (min-width: 576px) {
+    .engineering-it__content, .engineering-it__photo,
+    .program-management__content,
+    .program-management__photo,
+    .financial-management__content,
+    .financial-management__photo {
+      flex: 0 0 50%;
+      width: 50%;
+      max-width: 50%; } }
+
+.program-management {
+  background-color: #F8F8F8; }
+
 .content {
   font-size: 20px; }
