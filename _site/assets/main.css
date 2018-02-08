@@ -436,8 +436,8 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
+  font-weight: 700;
+  line-height: 1.35;
   color: inherit; }
 
 h1, .h1 {
@@ -465,22 +465,22 @@ h6, .h6 {
 .display-1 {
   font-size: 6rem;
   font-weight: 300;
-  line-height: 1.1; }
+  line-height: 1.35; }
 
 .display-2 {
   font-size: 5.5rem;
   font-weight: 300;
-  line-height: 1.1; }
+  line-height: 1.35; }
 
 .display-3 {
   font-size: 4.5rem;
   font-weight: 300;
-  line-height: 1.1; }
+  line-height: 1.35; }
 
 .display-4 {
   font-size: 3.5rem;
   font-weight: 300;
-  line-height: 1.1; }
+  line-height: 1.35; }
 
 hr {
   margin-top: 1rem;
@@ -7481,49 +7481,130 @@ footer {
         top: 5px; }
 
 .home-hero {
-  background-color: #313E99;
-  color: #fff; }
+  background: url("/assets/img/home-hero-bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  padding: 10rem 0; }
+  .home-hero__description {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%; }
+    @media (min-width: 768px) {
+      .home-hero__description {
+        flex: 0 0 58.3333333333%;
+        width: 58.3333333333%;
+        max-width: 58.3333333333%; } }
 
 .company-intro {
   background-color: #313E99;
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  padding: 4rem 0; }
+  .company-intro__description {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    font-weight: 300;
+    line-height: 1.5; }
+    @media (min-width: 768px) {
+      .company-intro__description {
+        flex: 0 0 66.6666666667%;
+        width: 66.6666666667%;
+        max-width: 66.6666666667%;
+        margin-left: 16.6666666667%; } }
 
 .news-jobs {
-  background-color: #E8EFF7; }
-  .news-jobs__hot-jobs, .news-jobs__latest-news {
+  background-color: #E8EFF7;
+  padding: 4rem 0; }
+  .news-jobs ul {
+    list-style: none;
+    padding-left: 0; }
+    .news-jobs ul li {
+      margin-bottom: 15px; }
+      .news-jobs ul li:nth-last-child(1) {
+        margin-bottom: 0; }
+  .news-jobs__latest-news, .news-jobs__hot-jobs {
     flex: 0 0 100%;
     width: 100%;
     max-width: 100%; }
-    @media (min-width: 576px) {
-      .news-jobs__hot-jobs, .news-jobs__latest-news {
-        flex: 0 0 50%;
-        width: 50%;
-        max-width: 50%; } }
-
-.what-we-do {
-  text-align: center; }
-
-.engineering-it__content, .engineering-it__photo,
-.program-management__content,
-.program-management__photo,
-.financial-management__content,
-.financial-management__photo {
-  flex: 0 0 100%;
-  width: 100%;
-  max-width: 100%; }
   @media (min-width: 576px) {
-    .engineering-it__content, .engineering-it__photo,
-    .program-management__content,
-    .program-management__photo,
-    .financial-management__content,
-    .financial-management__photo {
+    .news-jobs__latest-news {
       flex: 0 0 50%;
       width: 50%;
       max-width: 50%; } }
+  @media (min-width: 576px) {
+    .news-jobs__hot-jobs {
+      flex: 0 0 33.3333333333%;
+      width: 33.3333333333%;
+      max-width: 33.3333333333%;
+      margin-left: 8.3333333333%; } }
+
+.what-we-do {
+  text-align: center;
+  padding-top: 4rem; }
+  .what-we-do__content {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .what-we-do__content {
+        flex: 0 0 66.6666666667%;
+        width: 66.6666666667%;
+        max-width: 66.6666666667%;
+        margin-left: 16.6666666667%; } }
+  .what-we-do__title:after {
+    content: "";
+    margin: 20px auto 30px auto;
+    background-color: #06BEE1;
+    width: 80px;
+    height: 6px;
+    display: block; }
+
+.engineering-it,
+.financial-management {
+  padding: 6rem 0; }
+  .engineering-it__content,
+  .financial-management__content {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 50%;
+    width: 50%;
+    max-width: 50%;
+    margin-left: 8.3333333333%; }
+  .engineering-it__photo,
+  .financial-management__photo {
+    flex: 0 0 41.6666666667%;
+    width: 41.6666666667%;
+    max-width: 41.6666666667%; }
+  .engineering-it__photo-img,
+  .financial-management__photo-img {
+    max-width: 100%; }
 
 .program-management {
+  padding: 6rem 0;
   background-color: #F8F8F8; }
+  .program-management__content {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 41.6666666667%;
+    width: 41.6666666667%;
+    max-width: 41.6666666667%; }
+  .program-management__photo {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 50%;
+    width: 50%;
+    max-width: 50%;
+    margin-left: 8.3333333333%; }
+  .program-management__photo-img {
+    max-width: 100%; }
 
 .content {
   font-size: 20px; }

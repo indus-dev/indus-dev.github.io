@@ -5,13 +5,13 @@ layout: default
 <div class="home">
   <div class="home-hero">
     <div class="container">
-      <h1>We provide quality professional services for industry and government</h1>
+      <h1 class="home-hero__description">We provide quality professional services for industry and government</h1>
     </div>
   </div>
 
   <div class="company-intro">
     <div class="container">
-      <h3>We are an employee owned, customer-focused goverment services contractor known for providing technical excellence in engineering, IT Solutions, and program management</h3>
+      <h3 class="company-intro__description">We are an employee owned, customer-focused goverment services contractor known for providing technical excellence in engineering, IT Solutions, and program management</h3>
     </div>
   </div>
 
@@ -29,8 +29,8 @@ layout: default
             <li><a href="#">Program Management Support Services Contract</a></li>
           </ul>
         </div>
-        <div class="news-jobs__latest-news">
-          <h3 class="news-jobs__latest-news-title">Latest News &amp; Press Releases</h3>
+        <div class="news-jobs__hot-jobs">
+          <h3 class="news-jobs__hot-jobs-title">Hot Jobs</h3>
           <ul>
             <li><a href="#">Industrial Engineer</a></li>
             <li><a href="#">Integrated Master Scheduler</a></li>
@@ -46,10 +46,12 @@ layout: default
 
   <div class="what-we-do">
     <div class="container">
-      <h2>What We Do</h2>
-      <p>
-        INDUS Technology, Inc. is a premier provider of quality professional services for industry and government. Our Company is synonymous with outstanding people, who take pride in partnering with our customers to provide quality services that are responsive, innovative and cost effective.
-      </p>
+      <div class="what-we-do__content">
+        <h2 class="what-we-do__title">What We Do</h2>
+        <p>
+          INDUS Technology, Inc. is a premier provider of quality professional services for industry and government. Our Company is synonymous with outstanding people, who take pride in partnering with our customers to provide quality services that are responsive, innovative and cost effective.
+        </p>
+      </div>
     </div>
   </div>
 
@@ -57,7 +59,7 @@ layout: default
     <div class="container">
       <div class="row">
         <div class="engineering-it__photo">
-          <img src="" />
+          <img src="{{ "/assets/img/engineering-it.jpg" | relative_url }}" alt="Engineering and IT" class="engineering-it__photo-img" />
         </div>
         <div class="engineering-it__content">
           <h3>Engineering and IT</h3>
@@ -108,7 +110,7 @@ layout: default
           </ul>
         </div>
         <div class="program-management__photo">
-          <img src="" />
+          <img src="{{ "/assets/img/program-management.jpg" | relative_url }}" alt="Program Management and Command Staff" class="program-management__photo-img" />
         </div>
       </div>
     </div>
@@ -118,7 +120,7 @@ layout: default
     <div class="container">
       <div class="row">
         <div class="financial-management__photo">
-          <img src="" />
+          <img src="{{ "/assets/img/finanacial-management.jpg" | relative_url }}" alt="Financial Management" class="financial-management__photo-img" />
         </div>
         <div class="financial-management__content">
           <h3>Financial Management</h3>
