@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<div class="default-content">
+  <div class="container">
+
+    <div class="default-content__header">
+      <div class="row">
+        {% if page.title %}
+          <h1 class="default-content__page-title">{{ page.title }}</h1>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="default-content__main">
+      <div class="row">
+        <div class="default-content__sidebar-nav">
+          <ul>
+            <li><a href="#">Seaport Main Page</a></li>
+            <li><a href="#">INDUS Contacts</a></li>
+            <li><a href="#">Past Performance</a></li>
+            <li><a href="#">INDUS Team and Capabilities</a></li>
+            <li><a href="#">INDUS Task Order Process</a></li>
+            <li><a href="#">Task Orders Received</a></li>
+            <li><a href="#">Q.A. Description</a></li>
+          </ul>
+        </div>
+        <div class="default-content__content">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

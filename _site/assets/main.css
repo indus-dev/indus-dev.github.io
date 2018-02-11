@@ -7621,5 +7621,10 @@ footer {
   width: 50%;
   max-width: 50%; }
 
+.default-content h1, .default-content h2, .default-content h3, .default-content h4, .default-content h4, .default-content h5, .default-content h6, .default-content p {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%; }
+
 .content {
   font-size: 20px; }
