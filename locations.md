@@ -1,0 +1,4 @@
+---
+layout: locations
+title: Locations
+---

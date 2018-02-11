@@ -1,0 +1,19 @@
+.about-page {
+  
+}
+
+.senior-management {
+  &__photo {
+    @include make-col(12);
+    @include media-breakpoint-up(xs) {
+      @include make-col(6);
+    }
+  }
+
+  &__info {
+    @include make-col(12);
+    @include media-breakpoint-up(xs) {
+      @include make-col(6);
+    }
+  }
+}

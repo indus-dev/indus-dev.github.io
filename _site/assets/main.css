@@ -7606,5 +7606,20 @@ footer {
   .program-management__photo-img {
     max-width: 100%; }
 
+.senior-management__photo {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  flex: 0 0 50%;
+  width: 50%;
+  max-width: 50%; }
+.senior-management__info {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  flex: 0 0 50%;
+  width: 50%;
+  max-width: 50%; }
+
 .content {
   font-size: 20px; }

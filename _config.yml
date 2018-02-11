@@ -46,3 +46,6 @@ sass:
         - node_modules
 
 exclude: []
+
+include: ["_pages"]
+permalink: /:title/
