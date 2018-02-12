@@ -7489,7 +7489,7 @@ footer {
         position: relative;
         top: 5px; }
 
-.what-we-do__title:after, .senior-management__title:after, .default-content__page-title:after {
+.senior-management__title:after, .default-content__page-title:after, .what-we-do__title:after {
   content: "";
   margin: 20px auto 30px auto;
   background-color: #06BEE1;
@@ -7607,64 +7607,6 @@ footer {
       max-width: 33.3333333333%;
       margin-left: 8.3333333333%; } }
 
-.what-we-do {
-  text-align: center;
-  padding-top: 2rem; }
-  .what-we-do__content {
-    flex: 0 0 100%;
-    width: 100%;
-    max-width: 100%;
-    text-align: center; }
-    @media (min-width: 768px) {
-      .what-we-do__content {
-        flex: 0 0 66.6666666667%;
-        width: 66.6666666667%;
-        max-width: 66.6666666667%;
-        margin-left: 16.6666666667%;
-        padding-top: 4rem; } }
-
-.engineering-it,
-.financial-management {
-  padding: 6rem 0; }
-  .engineering-it__content,
-  .financial-management__content {
-    flex: 0 0 100%;
-    width: 100%;
-    max-width: 100%;
-    flex: 0 0 50%;
-    width: 50%;
-    max-width: 50%;
-    margin-left: 8.3333333333%; }
-  .engineering-it__photo,
-  .financial-management__photo {
-    flex: 0 0 41.6666666667%;
-    width: 41.6666666667%;
-    max-width: 41.6666666667%; }
-  .engineering-it__photo-img,
-  .financial-management__photo-img {
-    max-width: 100%; }
-
-.program-management {
-  padding: 6rem 0;
-  background-color: #F8F8F8; }
-  .program-management__content {
-    flex: 0 0 100%;
-    width: 100%;
-    max-width: 100%;
-    flex: 0 0 41.6666666667%;
-    width: 41.6666666667%;
-    max-width: 41.6666666667%; }
-  .program-management__photo {
-    flex: 0 0 100%;
-    width: 100%;
-    max-width: 100%;
-    flex: 0 0 50%;
-    width: 50%;
-    max-width: 50%;
-    margin-left: 8.3333333333%; }
-  .program-management__photo-img {
-    max-width: 100%; }
-
 .senior-management .row {
   padding-bottom: 2rem; }
   @media (min-width: 576px) {
@@ -7766,6 +7708,71 @@ footer {
         flex: 0 0 66.6666666667%;
         width: 66.6666666667%;
         max-width: 66.6666666667%; } }
+
+.what-we-do {
+  text-align: center;
+  padding-top: 2rem; }
+  .what-we-do__content {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .what-we-do__content {
+        flex: 0 0 66.6666666667%;
+        width: 66.6666666667%;
+        max-width: 66.6666666667%;
+        margin-left: 16.6666666667%;
+        padding-top: 4rem; } }
+
+.engineering-it,
+.financial-management {
+  padding: 2rem 0; }
+  @media (min-width: 576px) {
+    .engineering-it,
+    .financial-management {
+      padding: 6rem 0; } }
+  .engineering-it__content,
+  .financial-management__content {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 50%;
+    width: 50%;
+    max-width: 50%;
+    margin-left: 8.3333333333%; }
+  .engineering-it__photo,
+  .financial-management__photo {
+    flex: 0 0 41.6666666667%;
+    width: 41.6666666667%;
+    max-width: 41.6666666667%; }
+  .engineering-it__photo-img,
+  .financial-management__photo-img {
+    max-width: 100%; }
+
+.engineering-it {
+  padding-top: 0; }
+
+.program-management {
+  padding: 6rem 0;
+  background-color: #F8F8F8; }
+  .program-management__content {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 41.6666666667%;
+    width: 41.6666666667%;
+    max-width: 41.6666666667%; }
+  .program-management__photo {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 50%;
+    width: 50%;
+    max-width: 50%;
+    margin-left: 8.3333333333%; }
+  .program-management__photo-img {
+    max-width: 100%; }
 
 .content {
   font-size: 20px; }

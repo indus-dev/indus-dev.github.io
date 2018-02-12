@@ -1,0 +1,75 @@
+.what-we-do {
+  text-align: center;
+  padding-top: 2rem;
+
+  &__content {
+    @include make-col(12);
+
+    @include media-breakpoint-up(md) {
+      @include make-col(8);
+      @include make-col-offset(2);
+      padding-top: 4rem;
+    }
+
+    text-align: center;
+  }
+
+  &__title {
+    @extend %primary-section-header;
+  }
+}
+
+.engineering-it,
+.financial-management {
+  padding: 2rem 0;
+
+  @include media-breakpoint-up(sm) {
+    padding: 6rem 0;
+  }
+
+  &__content {
+    @include make-col(12);
+    @include media-breakpoint-up(xs) {
+       @include make-col(6);
+       @include make-col-offset(1);
+    }
+  }
+
+  &__photo {
+    @include media-breakpoint-up(xs) {
+      @include make-col(5);
+    }
+  }
+
+  &__photo-img {
+    max-width: 100%;
+  }
+}
+
+.engineering-it {
+  padding-top: 0;
+}
+
+.program-management {
+  padding: 6rem 0;
+  background-color: #F8F8F8;
+
+  &__content {
+    @include make-col(12);
+    @include media-breakpoint-up(xs) {
+      @include make-col(5);
+    }
+  }
+
+  &__photo {
+    @include make-col(12);
+    @include media-breakpoint-up(xs) {
+       @include make-col(6);
+       @include make-col-offset(1);
+    }
+  }
+
+  &__photo-img {
+    max-width: 100%;
+  }
+}
