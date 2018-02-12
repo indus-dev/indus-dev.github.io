@@ -1,0 +1,10 @@
+%primary-section-header {
+  &:after {
+    content: "";
+    margin: 20px auto 30px auto;
+    background-color: $teal;
+    width: 80px;
+    height: 6px;
+    display: block;
+  }  
+}

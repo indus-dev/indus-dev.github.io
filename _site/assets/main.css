@@ -444,7 +444,7 @@ h1, .h1 {
   font-size: 3rem; }
 
 h2, .h2 {
-  font-size: 2rem; }
+  font-size: 2.5rem; }
 
 h3, .h3 {
   font-size: 1.75rem; }
@@ -7315,23 +7315,32 @@ strong,
   text-transform: uppercase;
   font-size: 18px; }
 
-header .navbar-toggler-right {
-  top: 1.25rem;
-  outline: none; }
-header .nav-item {
-  margin-right: 40px; }
-  header .nav-item:nth-last-child(1) {
-    margin-right: 0; }
-header .navbar-light .navbar-nav .nav-link {
-  padding: .75rem 0;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #313E99; }
-header .navbar-light .navbar-nav .btn.btn-primary {
-  color: #fff;
-  padding: .75rem 1rem; }
-  header .navbar-light .navbar-nav .btn.btn-primary svg {
-    margin-right: 5px; }
+body.home-page header {
+  border-bottom: none; }
+
+header {
+  border-bottom: 1px solid #E5E5E5;
+  padding: .5rem 0; }
+  header .container {
+    padding-left: 0;
+    padding-right: 0; }
+  header .navbar-toggler-right {
+    top: 1.25rem;
+    outline: none; }
+  header .nav-item {
+    margin-right: 30px; }
+    header .nav-item:nth-last-child(1) {
+      margin-right: 0; }
+  header .navbar-brand-logo {
+    width: 150px; }
+  header .navbar-light .navbar-nav .nav-link {
+    padding: .75rem 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #313E99; }
+  header .navbar-light .navbar-nav .btn.btn-primary {
+    color: #fff;
+    padding: .75rem 1rem; }
 
 footer {
   font-size: 14px; }
@@ -7480,6 +7489,59 @@ footer {
         position: relative;
         top: 5px; }
 
+.what-we-do__title:after, .senior-management__title:after, .default-content__page-title:after {
+  content: "";
+  margin: 20px auto 30px auto;
+  background-color: #06BEE1;
+  width: 80px;
+  height: 6px;
+  display: block; }
+
+.page-intro {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding: 2rem 0; }
+  @media (min-width: 576px) {
+    .page-intro {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 768px) {
+    .page-intro {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 992px) {
+    .page-intro {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 1200px) {
+    .page-intro {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 768px) {
+    .page-intro {
+      padding: 4rem 0; } }
+  .page-intro__content {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 0; }
+    @media (min-width: 768px) {
+      .page-intro__content {
+        flex: 0 0 50%;
+        width: 50%;
+        max-width: 50%;
+        margin-left: 16.6666666667%;
+        padding: 4rem 0; } }
+  .page-intro .page-heading {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%; }
+  .page-intro__secondary-title {
+    padding: 2rem 0 1rem 0; }
+
 .home-hero {
   background: url("/assets/img/home-hero-bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -7518,7 +7580,10 @@ footer {
 
 .news-jobs {
   background-color: #E8EFF7;
-  padding: 4rem 0; }
+  padding: 2rem 0; }
+  @media (min-width: 576px) {
+    .news-jobs {
+      padding: 4rem 0; } }
   .news-jobs ul {
     list-style: none;
     padding-left: 0; }
@@ -7544,7 +7609,7 @@ footer {
 
 .what-we-do {
   text-align: center;
-  padding-top: 4rem; }
+  padding-top: 2rem; }
   .what-we-do__content {
     flex: 0 0 100%;
     width: 100%;
@@ -7555,14 +7620,8 @@ footer {
         flex: 0 0 66.6666666667%;
         width: 66.6666666667%;
         max-width: 66.6666666667%;
-        margin-left: 16.6666666667%; } }
-  .what-we-do__title:after {
-    content: "";
-    margin: 20px auto 30px auto;
-    background-color: #06BEE1;
-    width: 80px;
-    height: 6px;
-    display: block; }
+        margin-left: 16.6666666667%;
+        padding-top: 4rem; } }
 
 .engineering-it,
 .financial-management {
@@ -7606,25 +7665,107 @@ footer {
   .program-management__photo-img {
     max-width: 100%; }
 
+.senior-management .row {
+  padding-bottom: 2rem; }
+  @media (min-width: 576px) {
+    .senior-management .row {
+      padding-bottom: 4rem; } }
 .senior-management__photo {
   flex: 0 0 100%;
   width: 100%;
-  max-width: 100%;
-  flex: 0 0 50%;
-  width: 50%;
-  max-width: 50%; }
+  max-width: 100%; }
+  @media (min-width: 576px) {
+    .senior-management__photo {
+      flex: 0 0 50%;
+      width: 50%;
+      max-width: 50%; } }
 .senior-management__info {
   flex: 0 0 100%;
   width: 100%;
+  max-width: 100%; }
+  @media (min-width: 576px) {
+    .senior-management__info {
+      flex: 0 0 50%;
+      width: 50%;
+      max-width: 50%; } }
+.senior-management__intro {
+  flex: 0 0 100%;
+  width: 100%;
   max-width: 100%;
-  flex: 0 0 50%;
-  width: 50%;
-  max-width: 50%; }
+  padding-top: 2rem; }
+  @media (min-width: 768px) {
+    .senior-management__intro {
+      flex: 0 0 66.6666666667%;
+      width: 66.6666666667%;
+      max-width: 66.6666666667%;
+      margin-left: 16.6666666667%;
+      text-align: center;
+      padding-top: 4rem; } }
+
+.business-background {
+  background-color: #E8EFF7;
+  padding: 2rem 0; }
+  @media (min-width: 576px) {
+    .business-background {
+      padding: 4rem 0; } }
+  @media (min-width: 768px) {
+    .business-background__content {
+      flex: 0 0 66.6666666667%;
+      width: 66.6666666667%;
+      max-width: 66.6666666667%;
+      margin-left: 16.6666666667%;
+      text-align: center; } }
+
+.btn.btn-primary svg {
+  margin-right: 10px; }
+
+.container {
+  padding: 0 30px; }
 
 .default-content h1, .default-content h2, .default-content h3, .default-content h4, .default-content h4, .default-content h5, .default-content h6, .default-content p {
   flex: 0 0 100%;
   width: 100%;
   max-width: 100%; }
+.default-content__page-title {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%; }
+  .default-content__page-title:after {
+    margin-left: 4px;
+    margin-right: 0; }
+.default-content__header {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem 0 1rem 0; }
+  @media (min-width: 768px) {
+    .default-content__header {
+      padding: 4rem 0 2rem 0; } }
+
+.contract-vehicles {
+  padding-bottom: 4rem; }
+  @media (min-width: 768px) {
+    .contract-vehicles {
+      padding-bottom: 6rem; } }
+  .contract-vehicles__sidebar-nav {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%; }
+    @media (min-width: 576px) {
+      .contract-vehicles__sidebar-nav {
+        flex: 0 0 25%;
+        width: 25%;
+        max-width: 25%; } }
+  .contract-vehicles__content {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%; }
+    @media (min-width: 576px) {
+      .contract-vehicles__content {
+        margin-left: 8.3333333333%;
+        flex: 0 0 66.6666666667%;
+        width: 66.6666666667%;
+        max-width: 66.6666666667%; } }
 
 .content {
   font-size: 20px; }

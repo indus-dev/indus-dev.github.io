@@ -1,17 +1,23 @@
 ---
 ---
 
+// Site Config
 @import "variables.scss";
 @import "bootstrap/scss/bootstrap.scss";
 @import "@ibm/type/scss/ibm-type.scss";
-
 @import "typography.scss";
 @import "header.scss";
 @import "footer.scss";
 @import "mixins.scss";
+@import "placeholders.scss";
+@import "hero-sections.scss";
+
+// Page Templates
 @import "home.scss";
 @import "about.scss";
+@import "site.scss";
 @import "default-content.scss";
+@import "contract-vehicles.scss";
 @import "404.scss";
 
 .content {

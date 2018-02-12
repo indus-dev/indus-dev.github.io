@@ -35,7 +35,11 @@
 
 .news-jobs {
   background-color: $soft-blue;
-  padding: 4rem 0;
+  padding: 2rem 0;
+
+  @include media-breakpoint-up(sm) {
+    padding: 4rem 0;
+  }
 
   ul {
     list-style: none;
@@ -71,7 +75,7 @@
 
 .what-we-do {
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 2rem;
 
   &__content {
     @include make-col(12);
@@ -79,20 +83,14 @@
     @include media-breakpoint-up(md) {
       @include make-col(8);
       @include make-col-offset(2);
+      padding-top: 4rem;
     }
 
     text-align: center;
   }
 
   &__title {
-    &:after {
-      content: "";
-      margin: 20px auto 30px auto;
-      background-color: $teal;
-      width: 80px;
-      height: 6px;
-      display: block;
-    }
+    @extend %primary-section-header;
   }
 }
 

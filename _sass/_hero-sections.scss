@@ -1,0 +1,27 @@
+.page-intro {
+  @include make-col-ready;
+  padding: 2rem 0;
+
+  @include media-breakpoint-up(md) {
+    padding: 4rem 0;
+  }
+
+  &__content {
+    @include make-col(12);
+    padding: 2rem 0;
+
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+      @include make-col-offset(2);
+      padding: 4rem 0;
+    }
+  }
+
+  .page-heading {
+    @include make-col(12);
+  }
+
+  &__secondary-title {
+    padding: 2rem 0 1rem 0;
+  }
+}

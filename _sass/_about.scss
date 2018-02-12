@@ -1,19 +1,58 @@
-.about-page {
-  
-}
-
 .senior-management {
+
+  .row {
+    padding-bottom: 2rem;
+    @include media-breakpoint-up(sm) {
+      padding-bottom: 4rem;
+    }
+  }
+
   &__photo {
     @include make-col(12);
-    @include media-breakpoint-up(xs) {
+    @include media-breakpoint-up(sm) {
       @include make-col(6);
     }
   }
 
   &__info {
     @include make-col(12);
-    @include media-breakpoint-up(xs) {
+    @include media-breakpoint-up(sm) {
       @include make-col(6);
+    }
+  }
+
+  &__intro {
+    @include make-col(12);
+    padding-top: 2rem;
+
+    @include media-breakpoint-up(md) {
+      @include make-col(8);
+      @include make-col-offset(2);
+      text-align: center;
+      padding-top: 4rem;
+    }
+  }
+
+  &__title {
+    @extend %primary-section-header;
+  }
+
+} // senior-management
+
+.business-background {
+  background-color: $soft-blue;
+  padding: 2rem 0;
+
+  @include media-breakpoint-up(sm) {
+    padding: 4rem 0;
+  }
+
+  &__content {
+    @include media-breakpoint-up(md) {
+      @include make-col(8);
+      @include make-col-offset(2);
+
+      text-align: center;
     }
   }
 }
