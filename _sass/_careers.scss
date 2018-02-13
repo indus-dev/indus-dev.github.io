@@ -1,0 +1,53 @@
+.salary-benefits {
+  background-color: $brand-primary;
+  color: $white;
+  padding: 2rem 0;
+
+  @include media-breakpoint-up(md) {
+    padding: 4rem 0;
+  }
+
+  &__list {
+    @include make-col(12);
+
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
+
+  }
+}
+
+.job-postings {
+  background-color: $soft-blue;
+  padding: 2rem 0;
+
+  @include media-breakpoint-up(md) {
+    padding: 4rem 0;
+  }
+
+  .row {
+    margin-bottom: 20px;
+  }
+
+  &__position {
+    @include make-col(12);
+
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+    }
+  }
+
+  &__position-wrapper {
+    @include border-radius(4px);
+    @include make-col-ready;
+    background-color: $white;
+    border-left: 6px solid $brand-primary;
+    max-width: 90%;
+    margin: auto;
+    padding: 1rem 0;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+}

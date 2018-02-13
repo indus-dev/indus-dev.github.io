@@ -52,7 +52,7 @@
 
 .program-management {
   padding: 6rem 0;
-  background-color: #F8F8F8;
+  background-color: $soft-blue;
 
   &__content {
     @include make-col(12);

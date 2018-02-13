@@ -2,8 +2,7 @@
 layout: default
 ---
 
-<div class="locations-page">
-
+<div class="locations">
   <div class="locations">
     <div class="container">
 
@@ -13,9 +12,13 @@ layout: default
         {% endif %}
       </div>
 
-      <div class="row">
+      <div class="row locations__map-list">
+        <div class="locations__map">
+          <img src="{{ "/assets/svg/locations-map.svg" | relative_url }}" alt="Engineering and IT" class="locations__map-svg" />
+        </div>
+
         <div class="locations__list">
-          <h2>United States</h2>
+          <h4>United States</h4>
           <ul>
             <li>Charleston, SC</li>
             <li>Fallbrook, CA</li>
@@ -36,18 +39,13 @@ layout: default
             <li>Virginia Beach, VA</li>
             <li>Washington DC</li>
           </ul>
-          <h3>Other Locations</h3>
+          <h4>Other Locations</h4>
           <ul>
             <li>
               Southeast Asia
             </li>
           </ul>
         </div>
-
-        <div class="locations__map">
-          svg
-        </div>
-
       </div>
 
     </div>
