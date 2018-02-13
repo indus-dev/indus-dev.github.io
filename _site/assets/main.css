@@ -7620,15 +7620,23 @@ footer {
   max-width: 100%; }
   @media (min-width: 576px) {
     .senior-management__photo {
-      flex: 0 0 50%;
-      width: 50%;
-      max-width: 50%; } }
+      flex: 0 0 33.3333333333%;
+      width: 33.3333333333%;
+      max-width: 33.3333333333%; } }
+.senior-management__photo-img {
+  max-width: 100%; }
+.senior-management__row {
+  margin-bottom: 1rem; }
+  @media (min-width: 576px) {
+    .senior-management__row {
+      margin-bottom: 3rem; } }
 .senior-management__info {
   flex: 0 0 100%;
   width: 100%;
   max-width: 100%; }
   @media (min-width: 576px) {
     .senior-management__info {
+      margin-left: 16.6666666667%;
       flex: 0 0 50%;
       width: 50%;
       max-width: 50%; } }
@@ -7886,6 +7894,16 @@ footer {
     @media (max-width: 991px) {
       .locations__list li {
         list-style: none; } }
+
+.contact-details__staff-member {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%; }
+  @media (min-width: 768px) {
+    .contact-details__staff-member {
+      flex: 0 0 50%;
+      width: 50%;
+      max-width: 50%; } }
 
 .content {
   font-size: 20px; }

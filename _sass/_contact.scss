@@ -1,0 +1,9 @@
+.contact-details {
+  &__staff-member {
+    @include make-col(12);
+
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
+  }
+}
