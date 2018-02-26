@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<div class="default-content">
+  <div class="container">
+
+    <div class="default-content__header">
+      <div class="row">
+        {% if page.title %}
+          <h1 class="default-content__page-title">{{ page.title }}</h1>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="contract-vehicles">
+      <div class="row">
+        <div class="contract-vehicles__sidebar-nav">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="/contract-vehicles" class="nav-link">Contract Vehicles</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contract-vehicles/seaport" class="nav-link">Seaport-e</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contract-vehicles/seaport/contacts" class="nav-link">INDUS Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contract-vehicles/seaport/past-performance" class="nav-link">Past Performance</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contract-vehicles/seaport/team-capabilities" class="nav-link">INDUS Team and Capabilities</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contract-vehicles/seaport/task-order-process" class="nav-link">INDUS Task Order Process</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contract-vehicles/seaport/task-orders-received" class="nav-link">Task Orders Received</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contract-vehicles/seaport/qa-description" class="nav-link">Q.A. Description</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contract-vehicles__content">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -7336,7 +7336,7 @@ header {
     width: 150px; }
   header .navbar-light .navbar-nav .nav-link {
     padding: .75rem 0;
-    font-size: 14px;
+    font-size: 13px;
     text-transform: uppercase;
     color: #313E99; }
   header .navbar-light .navbar-nav .btn.btn-primary {
@@ -7729,8 +7729,24 @@ footer {
         flex: 0 0 66.6666666667%;
         width: 66.6666666667%;
         max-width: 66.6666666667%; } }
+  .contract-vehicles__content-full {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%; }
+    @media (min-width: 576px) {
+      .contract-vehicles__content-full {
+        margin-left: 8.3333333333%;
+        left: 8.3333333333%;
+        flex: 0 0 83.3333333333%;
+        width: 83.3333333333%;
+        max-width: 83.3333333333%; } }
   .contract-vehicles .nav-link {
     padding-left: 0; }
+  .contract-vehicles__link {
+    color: #292b2c; }
+    .contract-vehicles__link:hover, .contract-vehicles__link:active, .contract-vehicles__link:visited {
+      text-decoration: none;
+      color: #292b2c; }
 
 .what-we-do {
   text-align: center;

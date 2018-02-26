@@ -20,7 +20,27 @@
     }
   }
 
+  &__content-full {
+    @include make-col(12);
+    @include media-breakpoint-up(sm) {
+      @include make-col-offset(1);
+      @include make-col-push(1);
+      @include make-col(10);
+    }
+  }
+
   .nav-link {
     padding-left: 0;
+  }
+
+  &__link {
+    color: $default-text;
+
+    &:hover,
+    &:active,
+    &:visited {
+      text-decoration: none;
+      color: $default-text;
+    }
   }
 }
