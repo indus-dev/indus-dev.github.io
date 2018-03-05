@@ -12,6 +12,14 @@ footer {
   background-color: $brand-primary;
   color: $white;
 
+  @include media-breakpoint-up(md) {
+    padding: 4rem 0;
+  }
+
+  p {
+    text-align: justify;
+  }
+
   a {
     &:hover,
     &:active {

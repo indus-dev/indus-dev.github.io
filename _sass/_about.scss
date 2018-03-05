@@ -28,6 +28,10 @@
     text-align: center;
   }
 
+  p {
+    text-align: justify;
+  }
+
   .row {
     padding-bottom: 2rem;
     @include media-breakpoint-up(sm) {
@@ -89,11 +93,17 @@
 } // senior-management
 
 .business-background {
-  background-color: $soft-blue;
+  background: url("/assets/img/business-background-bg.jpg") no-repeat center center fixed;
+  background-color: $brand-primary;
   padding: 2rem 0;
+  color: $white;
 
   @include media-breakpoint-up(sm) {
-    padding: 4rem 0;
+    padding: 8rem 0;
+  }
+
+  p {
+    text-align: justify;
   }
 
   &__content {

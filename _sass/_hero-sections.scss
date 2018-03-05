@@ -9,6 +9,7 @@
   &__content {
     @include make-col(12);
     padding: 2rem 0;
+    text-align: justify;
 
     @include media-breakpoint-up(md) {
       @include make-col(6);

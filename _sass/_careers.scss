@@ -1,17 +1,33 @@
 .salary-benefits {
-  background-color: $brand-primary;
+  background: url("/assets/img/salary-benefits-bg.jpg") no-repeat center center fixed;
   color: $white;
   padding: 2rem 0;
+  text-align: center;
 
   @include media-breakpoint-up(md) {
     padding: 4rem 0;
   }
 
+  &__list-wrapper {
+    @include media-breakpoint-up(md) {
+      padding: 4rem 0;
+    }
+  }
+
   &__list {
     @include make-col(12);
+    list-style: none;
 
     @include media-breakpoint-up(md) {
       @include make-col(6);
+    }
+
+    li {
+      margin-bottom: 20px;
+
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
     }
 
   }

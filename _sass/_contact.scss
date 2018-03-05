@@ -6,4 +6,36 @@
       @include make-col(6);
     }
   }
+
+  &__security-mail {
+    @include make-col(12);
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+    }
+  }
+}
+
+.contact-page {
+  &__intro-wrapper {
+    padding-bottom: 2rem;
+
+    @include media-breakpoint-up(md) {
+      padding-bottom: 6rem;
+    }
+  }
+
+  &__intro {
+    @include make-col(12);
+    @include media-breakpoint-up(md) {
+      @include make-col(5);
+    }
+  }
+
+  &__intro-photo {
+    @include make-col(12);
+    @include media-breakpoint-up(md) {
+      @include make-col-offset(1);
+      @include make-col(6);
+    }
+  }
 }

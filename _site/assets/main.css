@@ -7374,6 +7374,11 @@ footer {
     .primary-footer {
       padding-right: 15px;
       padding-left: 15px; } }
+  @media (min-width: 768px) {
+    .primary-footer {
+      padding: 4rem 0; } }
+  .primary-footer p {
+    text-align: justify; }
   .primary-footer a:hover, .primary-footer a:active {
     color: #06BEE1; }
   .primary-footer__brand-info {
@@ -7528,7 +7533,8 @@ footer {
     flex: 0 0 100%;
     width: 100%;
     max-width: 100%;
-    padding: 2rem 0; }
+    padding: 2rem 0;
+    text-align: justify; }
     @media (min-width: 768px) {
       .page-intro__content {
         flex: 0 0 50%;
@@ -7640,6 +7646,8 @@ footer {
 @media (max-width: 767px) {
   .senior-management {
     text-align: center; } }
+.senior-management p {
+  text-align: justify; }
 .senior-management .row {
   padding-bottom: 2rem; }
   @media (min-width: 576px) {
@@ -7694,11 +7702,15 @@ footer {
       padding-top: 4rem; } }
 
 .business-background {
-  background-color: #E8EFF7;
-  padding: 2rem 0; }
+  background: url("/assets/img/business-background-bg.jpg") no-repeat center center fixed;
+  background-color: #313E99;
+  padding: 2rem 0;
+  color: #fff; }
   @media (min-width: 576px) {
     .business-background {
-      padding: 4rem 0; } }
+      padding: 8rem 0; } }
+  .business-background p {
+    text-align: justify; }
   @media (min-width: 768px) {
     .business-background__content {
       flex: 0 0 66.6666666667%;
@@ -7847,21 +7859,30 @@ footer {
     max-width: 100%; }
 
 .salary-benefits {
-  background-color: #313E99;
+  background: url("/assets/img/salary-benefits-bg.jpg") no-repeat center center fixed;
   color: #fff;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  text-align: center; }
   @media (min-width: 768px) {
     .salary-benefits {
+      padding: 4rem 0; } }
+  @media (min-width: 768px) {
+    .salary-benefits__list-wrapper {
       padding: 4rem 0; } }
   .salary-benefits__list {
     flex: 0 0 100%;
     width: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    list-style: none; }
     @media (min-width: 768px) {
       .salary-benefits__list {
         flex: 0 0 50%;
         width: 50%;
         max-width: 50%; } }
+    .salary-benefits__list li {
+      margin-bottom: 20px; }
+      .salary-benefits__list li:nth-last-child(1) {
+        margin-bottom: 0; }
 
 .job-postings {
   background-color: #E8EFF7;
@@ -7912,7 +7933,7 @@ footer {
     margin-bottom: 25px; }
 
 .locations {
-  background-color: #313E99;
+  background: url("/assets/img/locations-bg.jpg") no-repeat center center fixed;
   color: #fff;
   padding: 1rem 0; }
   @media (min-width: 768px) {
@@ -7961,6 +7982,40 @@ footer {
   max-width: 100%; }
   @media (min-width: 768px) {
     .contact-details__staff-member {
+      flex: 0 0 50%;
+      width: 50%;
+      max-width: 50%; } }
+.contact-details__security-mail {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%; }
+  @media (min-width: 768px) {
+    .contact-details__security-mail {
+      flex: 0 0 33.3333333333%;
+      width: 33.3333333333%;
+      max-width: 33.3333333333%; } }
+
+.contact-page__intro-wrapper {
+  padding-bottom: 2rem; }
+  @media (min-width: 768px) {
+    .contact-page__intro-wrapper {
+      padding-bottom: 6rem; } }
+.contact-page__intro {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%; }
+  @media (min-width: 768px) {
+    .contact-page__intro {
+      flex: 0 0 41.6666666667%;
+      width: 41.6666666667%;
+      max-width: 41.6666666667%; } }
+.contact-page__intro-photo {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%; }
+  @media (min-width: 768px) {
+    .contact-page__intro-photo {
+      margin-left: 8.3333333333%;
       flex: 0 0 50%;
       width: 50%;
       max-width: 50%; } }
