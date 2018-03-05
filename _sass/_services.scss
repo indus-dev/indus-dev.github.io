@@ -57,15 +57,15 @@
   &__content {
     @include make-col(12);
     @include media-breakpoint-up(xs) {
-      @include make-col(5);
+      @include make-col(6);
     }
   }
 
   &__photo {
     @include make-col(12);
     @include media-breakpoint-up(xs) {
-       @include make-col(6);
-       @include make-col-offset(1);
+      @include make-col-offset(1);
+      @include make-col(5);
     }
   }
 

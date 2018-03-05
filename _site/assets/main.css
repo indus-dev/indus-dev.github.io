@@ -7550,7 +7550,10 @@ footer {
   -o-background-size: cover;
   background-size: cover;
   color: #fff;
-  padding: 10rem 0; }
+  padding: 8rem 0; }
+  @media (min-width: 768px) {
+    .home-hero {
+      padding: 14rem 0; } }
   .home-hero__description {
     flex: 0 0 100%;
     width: 100%;
@@ -7799,17 +7802,17 @@ footer {
     flex: 0 0 100%;
     width: 100%;
     max-width: 100%;
-    flex: 0 0 41.6666666667%;
-    width: 41.6666666667%;
-    max-width: 41.6666666667%; }
+    flex: 0 0 50%;
+    width: 50%;
+    max-width: 50%; }
   .program-management__photo {
     flex: 0 0 100%;
     width: 100%;
     max-width: 100%;
-    flex: 0 0 50%;
-    width: 50%;
-    max-width: 50%;
-    margin-left: 8.3333333333%; }
+    margin-left: 8.3333333333%;
+    flex: 0 0 41.6666666667%;
+    width: 41.6666666667%;
+    max-width: 41.6666666667%; }
   .program-management__photo-img {
     max-width: 100%; }
 

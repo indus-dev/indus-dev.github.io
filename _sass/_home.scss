@@ -5,7 +5,11 @@
   -o-background-size: cover;
   background-size: cover;
   color: $white;
-  padding: 10rem 0;
+  padding: 8rem 0;
+
+  @include media-breakpoint-up(md) {
+    padding: 14rem 0;
+  }
 
   &__description {
     @include make-col(12);
