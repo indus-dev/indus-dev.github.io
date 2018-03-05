@@ -7,3 +7,9 @@
 .container {
   padding: 0 30px;
 }
+
+.btn.btn-secondary {
+  color: $brand-primary;
+  border: 1px solid $brand-primary;
+  background-color: transparent;
+}

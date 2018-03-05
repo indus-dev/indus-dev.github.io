@@ -7612,6 +7612,31 @@ footer {
       max-width: 33.3333333333%;
       margin-left: 8.3333333333%; } }
 
+.about-page__intro-wrapper {
+  padding: 2rem 0; }
+  @media (min-width: 768px) {
+    .about-page__intro-wrapper {
+      padding: 4rem 0; } }
+.about-page__intro {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%; }
+  @media (min-width: 768px) {
+    .about-page__intro {
+      flex: 0 0 41.6666666667%;
+      width: 41.6666666667%;
+      max-width: 41.6666666667%; } }
+.about-page__intro-staff {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%; }
+  @media (min-width: 768px) {
+    .about-page__intro-staff {
+      margin-left: 8.3333333333%;
+      flex: 0 0 50%;
+      width: 50%;
+      max-width: 50%; } }
+
 @media (max-width: 767px) {
   .senior-management {
     text-align: center; } }
@@ -7687,6 +7712,11 @@ footer {
 
 .container {
   padding: 0 30px; }
+
+.btn.btn-secondary {
+  color: #313E99;
+  border: 1px solid #313E99;
+  background-color: transparent; }
 
 .default-content h1, .default-content h2, .default-content h3, .default-content h4, .default-content h4, .default-content h5, .default-content h6, .default-content p {
   flex: 0 0 100%;
