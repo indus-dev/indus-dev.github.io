@@ -7719,17 +7719,6 @@ footer {
       margin-left: 16.6666666667%;
       text-align: center; } }
 
-.btn.btn-primary svg {
-  margin-right: 10px; }
-
-.container {
-  padding: 0 30px; }
-
-.btn.btn-secondary {
-  color: #313E99;
-  border: 1px solid #313E99;
-  background-color: transparent; }
-
 .default-content h1, .default-content h2, .default-content h3, .default-content h4, .default-content h4, .default-content h5, .default-content h6, .default-content p {
   flex: 0 0 100%;
   width: 100%;
@@ -7865,7 +7854,7 @@ footer {
   text-align: center; }
   @media (min-width: 768px) {
     .salary-benefits {
-      padding: 4rem 0; } }
+      padding: 4rem 0 2rem 0; } }
   @media (min-width: 768px) {
     .salary-benefits__list-wrapper {
       padding: 4rem 0; } }
@@ -7880,7 +7869,7 @@ footer {
         width: 50%;
         max-width: 50%; } }
     .salary-benefits__list li {
-      margin-bottom: 20px; }
+      margin-bottom: 5px; }
       .salary-benefits__list li:nth-last-child(1) {
         margin-bottom: 0; }
 
@@ -8019,6 +8008,20 @@ footer {
       flex: 0 0 50%;
       width: 50%;
       max-width: 50%; } }
+
+.btn.btn-primary svg {
+  margin-right: 10px; }
+
+.container {
+  padding: 0 30px; }
+
+.btn.btn-secondary {
+  color: #313E99;
+  border: 1px solid #313E99;
+  background-color: transparent; }
+  .btn.btn-secondary:hover, .btn.btn-secondary:active {
+    color: #fff;
+    background-color: #313E99; }
 
 .content {
   font-size: 20px; }

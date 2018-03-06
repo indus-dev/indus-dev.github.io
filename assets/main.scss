@@ -15,7 +15,6 @@
 // Page Templates
 @import "home.scss";
 @import "about.scss";
-@import "site.scss";
 @import "default-content.scss";
 @import "contract-vehicles.scss";
 @import "404.scss";
@@ -23,6 +22,7 @@
 @import "careers.scss";
 @import "locations.scss";
 @import "contact.scss";
+@import "site.scss";
 
 .content {
   font-size: $custom-font-size;

@@ -12,4 +12,10 @@
   color: $brand-primary;
   border: 1px solid $brand-primary;
   background-color: transparent;
+
+  &:hover,
+  &:active {
+    color: $white;
+    background-color: $brand-primary;
+  }
 }
