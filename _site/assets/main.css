@@ -7378,7 +7378,10 @@ footer {
     .primary-footer {
       padding: 4rem 0; } }
   .primary-footer p {
-    text-align: justify; }
+    text-align: center; }
+    @media (min-width: 576px) {
+      .primary-footer p {
+        text-align: justify; } }
   .primary-footer a:hover, .primary-footer a:active {
     color: #06BEE1; }
   .primary-footer__brand-info {
@@ -7428,6 +7431,9 @@ footer {
         max-width: 25%; } }
     .primary-footer__contact-info a {
       color: #fff; }
+  .primary-footer__news-links {
+    list-style: none;
+    padding-left: 0; }
 
 .secondary-footer {
   position: relative;
@@ -7535,11 +7541,11 @@ footer {
     max-width: 100%;
     padding: 2rem 0;
     text-align: justify; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .page-intro__content {
-        flex: 0 0 50%;
-        width: 50%;
-        max-width: 50%;
+        flex: 0 0 66.6666666667%;
+        width: 66.6666666667%;
+        max-width: 66.6666666667%;
         margin-left: 16.6666666667%;
         padding: 4rem 0; } }
   .page-intro .page-heading {
@@ -7559,16 +7565,19 @@ footer {
   padding: 8rem 0; }
   @media (min-width: 768px) {
     .home-hero {
-      padding: 14rem 0; } }
+      padding: 8rem 0; } }
   .home-hero__description {
     flex: 0 0 100%;
     width: 100%;
     max-width: 100%; }
+    @media (max-width: 767px) {
+      .home-hero__description {
+        font-size: 2rem; } }
     @media (min-width: 768px) {
       .home-hero__description {
-        flex: 0 0 58.3333333333%;
-        width: 58.3333333333%;
-        max-width: 58.3333333333%; } }
+        flex: 0 0 66.6666666667%;
+        width: 66.6666666667%;
+        max-width: 66.6666666667%; } }
 
 .company-intro {
   background-color: #313E99;
@@ -7581,6 +7590,9 @@ footer {
     max-width: 100%;
     font-weight: 300;
     line-height: 1.5; }
+    @media (max-width: 767px) {
+      .company-intro__description {
+        font-size: 1.25rem; } }
     @media (min-width: 768px) {
       .company-intro__description {
         flex: 0 0 66.6666666667%;
@@ -7608,14 +7620,14 @@ footer {
     max-width: 100%; }
   @media (min-width: 576px) {
     .news-jobs__latest-news {
-      flex: 0 0 50%;
-      width: 50%;
-      max-width: 50%; } }
+      flex: 0 0 100%;
+      width: 100%;
+      max-width: 100%; } }
   @media (min-width: 576px) {
     .news-jobs__hot-jobs {
-      flex: 0 0 33.3333333333%;
-      width: 33.3333333333%;
-      max-width: 33.3333333333%;
+      flex: 0 0 100%;
+      width: 100%;
+      max-width: 100%;
       margin-left: 8.3333333333%; } }
 
 .about-page__intro-wrapper {
@@ -7663,14 +7675,16 @@ footer {
       flex: 0 0 33.3333333333%;
       width: 33.3333333333%;
       max-width: 33.3333333333%; } }
+  @media (max-width: 767px) {
+    .senior-management__photo {
+      margin-bottom: 30px; } }
 .senior-management__photo-img {
   max-width: 100%; }
   @media (max-width: 767px) {
     .senior-management__photo-img {
-      max-width: 60%;
+      margin-top: 60px;
       margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 30px; } }
+      margin-right: auto; } }
 .senior-management__row {
   margin-bottom: 1rem; }
   @media (min-width: 576px) {
@@ -7809,16 +7823,24 @@ footer {
   .financial-management__content {
     flex: 0 0 100%;
     width: 100%;
-    max-width: 100%;
-    flex: 0 0 50%;
-    width: 50%;
-    max-width: 50%;
-    margin-left: 8.3333333333%; }
-  .engineering-it__photo,
-  .financial-management__photo {
-    flex: 0 0 41.6666666667%;
-    width: 41.6666666667%;
-    max-width: 41.6666666667%; }
+    max-width: 100%; }
+    @media (min-width: 576px) {
+      .engineering-it__content,
+      .financial-management__content {
+        flex: 0 0 50%;
+        width: 50%;
+        max-width: 50%;
+        margin-left: 8.3333333333%; } }
+  @media (min-width: 576px) {
+    .engineering-it__photo,
+    .financial-management__photo {
+      flex: 0 0 41.6666666667%;
+      width: 41.6666666667%;
+      max-width: 41.6666666667%; } }
+  @media (max-width: 767px) {
+    .engineering-it__photo,
+    .financial-management__photo {
+      margin-bottom: 30px; } }
   .engineering-it__photo-img,
   .financial-management__photo-img {
     max-width: 100%; }
@@ -7832,18 +7854,25 @@ footer {
   .program-management__content {
     flex: 0 0 100%;
     width: 100%;
-    max-width: 100%;
-    flex: 0 0 50%;
-    width: 50%;
-    max-width: 50%; }
+    max-width: 100%; }
+    @media (min-width: 576px) {
+      .program-management__content {
+        flex: 0 0 50%;
+        width: 50%;
+        max-width: 50%; } }
   .program-management__photo {
     flex: 0 0 100%;
     width: 100%;
-    max-width: 100%;
-    margin-left: 8.3333333333%;
-    flex: 0 0 41.6666666667%;
-    width: 41.6666666667%;
-    max-width: 41.6666666667%; }
+    max-width: 100%; }
+    @media (min-width: 576px) {
+      .program-management__photo {
+        margin-left: 8.3333333333%;
+        flex: 0 0 41.6666666667%;
+        width: 41.6666666667%;
+        max-width: 41.6666666667%; } }
+    @media (max-width: 767px) {
+      .program-management__photo {
+        margin-top: 30px; } }
   .program-management__photo-img {
     max-width: 100%; }
 
@@ -7879,17 +7908,24 @@ footer {
   @media (min-width: 768px) {
     .job-postings {
       padding: 4rem 0; } }
-  .job-postings .row {
-    margin-bottom: 20px; }
+  .job-postings a {
+    font-weight: 700; }
+  .job-postings .btn.btn-secondary {
+    font-weight: 500; }
+  @media (min-width: 768px) {
+    .job-postings .row {
+      margin-bottom: 20px; } }
   .job-postings__position {
     flex: 0 0 100%;
     width: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    margin-bottom: 20px; }
     @media (min-width: 768px) {
       .job-postings__position {
         flex: 0 0 33.3333333333%;
         width: 33.3333333333%;
-        max-width: 33.3333333333%; } }
+        max-width: 33.3333333333%;
+        margin-bottom: 0; } }
   .job-postings__position-wrapper {
     border-radius: 4px;
     position: relative;
@@ -7899,9 +7935,8 @@ footer {
     padding-left: 15px;
     background-color: #fff;
     border-left: 6px solid #313E99;
-    max-width: 90%;
     margin: auto;
-    padding: 1rem 0; }
+    padding: 1rem 15px; }
     @media (min-width: 576px) {
       .job-postings__position-wrapper {
         padding-right: 15px;
@@ -7918,6 +7953,9 @@ footer {
       .job-postings__position-wrapper {
         padding-right: 15px;
         padding-left: 15px; } }
+    @media (min-width: 768px) {
+      .job-postings__position-wrapper {
+        max-width: 90%; } }
   .job-postings__title {
     margin-bottom: 25px; }
 

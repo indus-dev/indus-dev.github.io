@@ -41,15 +41,27 @@
     padding: 4rem 0;
   }
 
+  a {
+    font-weight: 700;
+  }
+
+  .btn.btn-secondary {
+    font-weight: 500;
+  }
+
   .row {
-    margin-bottom: 20px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 20px;
+    }
   }
 
   &__position {
     @include make-col(12);
+    margin-bottom: 20px;
 
     @include media-breakpoint-up(md) {
       @include make-col(4);
+      margin-bottom: 0;
     }
   }
 
@@ -58,9 +70,13 @@
     @include make-col-ready;
     background-color: $white;
     border-left: 6px solid $brand-primary;
-    max-width: 90%;
+
     margin: auto;
-    padding: 1rem 0;
+    padding: 1rem 15px;
+
+    @include media-breakpoint-up(md) {
+      max-width: 90%;
+    }
   }
 
   &__title {

@@ -8,10 +8,19 @@
   <!-- site css -->
   <link rel="stylesheet" href="/assets/main.css">
 
-  <title>INDUS Technology - Press Releases</title>
+  <title>INDUS Technology - Latest News</title>
 
   <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="INDUS Technology, Inc." />
-  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53680504-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-53680504-2');
+</script>
+
 
   <!-- fontawesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
@@ -67,7 +76,7 @@
     <div class="default-content__header">
       <div class="row">
         
-          <h1 class="default-content__page-title">Press Releases</h1>
+          <h1 class="default-content__page-title">Latest News</h1>
         
       </div>
     </div>
@@ -76,24 +85,52 @@
       <div class="row">
         <h3>2017</h3>
 <ul>
-  <li><a href="#">September 2017:INDUS has Change of Ownership</a></li>
-  <li><a href="#">September 2017: INDUS Technology Awarded IMSS Recompete Task Order</a></li>
-  <li><a href="#">July 2017: INDUS Technology is Awarded Customer Support and Program Management Support Services Contract</a></li>
+  <li><a href="#"><strong>September 2017:</strong> INDUS has Change of Ownership</a></li>
+  <li><a href="#"><strong>September 2017:</strong> INDUS Technology Awarded IMSS Recompete Task Order</a></li>
+  <li><a href="#"><strong>July 2017:</strong> INDUS Technology is Awarded Customer Support and Program Management Support Services Contract</a></li>
 </ul>
 
 <h3>2016</h3>
 <ul>
-  
+  <li>
+    <a href="#"><strong>May 2016:</strong> INDUS Technology is awarded Combat Systems In-Service Engineering Services to NSWC Port Hueneme</a>
+  </li>
+  <li>
+    <a href=""><strong>April 2016:</strong> INDUS Wins CNSP Financial Admin and Management Support Contract</a>
+  </li>
 </ul>
 
 <h3>2015</h3>
 <ul>
-
+  <li>
+    <a href=""><strong>September 2015:</strong> NSWC Panama City Division (PCD) Persistent Awareness Systems Development Branch Awards INDUS the Information Assurance Support Services Contract</a>
+  </li>
+  <li>
+    <a href=""><strong>January 2015:</strong> INDUS Part of the Winning ESN, Inc. Team for the NSWC Port Hueneme Division Combat System Operational Sequencing System Support Services Contract</a>
+  </li>
 </ul>
 
 <h3>2014</h3>
 <ul>
+  <li>
+    <a href=""><strong>December 2014:</strong> INDUS Wins Integrated International Support Services Task Order</a>
+  </li>
+  <li>
+    <a href=""><strong>August 2014:</strong> INDUS Announces Win of Contract to Support SSC Pacific CHENG</a>
+  </li>
+  <li>
+    <a href=""><strong>May 2014:</strong> INDUS Wins NUWC Keyport, Code 20 Detachments and Mark 30 Targets Contract</a>
+  </li>
+  <li>
+    <a href=""><strong>March 2014:</strong> INDUS Wins SATCOM, RF, and Navigation Systems Contract</a>
+  </li>
+</ul>
 
+<h3>2013</h3>
+<ul>
+  <li>
+    <a href=""><strong>September 2013:</strong> NUWC Newport Awards INDUS the Code 02 Financial Management Department Administrative and Technical Support Services Contract</a>
+  </li>
 </ul>
 
       </div>
@@ -137,9 +174,20 @@
   <a class="nav-link" href="/contact">Contact</a>
 </li>
 
+            <li class="nav-item">
+              <a class="nav-link" href="/news">Latest News</a>
+            </li>
           </ul>
         </div>
         <div class="primary-footer__contact-info">
+          <div class="primary-footer__contact-info-title">
+            Latest News
+          </div>
+          <ul class="primary-footer__news-links">
+            <li><a href="/assets/pdf/press-releases/2017/092917%20Press%20Release%20-%20Change%20of%20Ownership.pdf" target="_blank">INDUS Change of Ownership</a></li>
+            <li><a href="#">INDUS Technology Awarded IMSS Recompete Task Order</a></li>
+          </ul>
+
           <div class="primary-footer__contact-info-title">
             Contact
           </div>
@@ -186,6 +234,23 @@
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<script>
+  function initMap() {
+    var uluru = {lat: -25.363, lng: 131.044};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 4,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
 
 
 </body>

@@ -12,9 +12,20 @@
           </div>
           <ul class="nav flex-column">
             {% include company-nav.html %}
+            <li class="nav-item">
+              <a class="nav-link" href="/news">Latest News</a>
+            </li>
           </ul>
         </div>
         <div class="primary-footer__contact-info">
+          <div class="primary-footer__contact-info-title">
+            Latest News
+          </div>
+          <ul class="primary-footer__news-links">
+            <li><a href="{{ "/assets/pdf/press-releases/2017/092917 Press Release - Change of Ownership.pdf" | relative_url }}" target="_blank">INDUS Change of Ownership</a></li>
+            <li><a href="#">INDUS Technology Awarded IMSS Recompete Task Order</a></li>
+          </ul>
+
           <div class="primary-footer__contact-info-title">
             Contact
           </div>
@@ -61,3 +72,20 @@
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<script>
+  function initMap() {
+    var uluru = {lat: -25.363, lng: 131.044};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 4,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>

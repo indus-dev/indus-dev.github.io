@@ -45,16 +45,19 @@
       @include make-col-offset(1);
       @include make-col(4);
     }
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 30px;
+    }
   }
 
   &__photo-img {
     max-width: 100%;
 
     @include media-breakpoint-down(sm) {
-      max-width: 60%;
+      margin-top: 60px;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 30px;
     }
   }
 
