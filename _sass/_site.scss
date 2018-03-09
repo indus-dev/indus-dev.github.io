@@ -2,6 +2,11 @@
   svg {
     margin-right: 10px;
   }
+
+  &:hover,
+  &:active {
+    color: $white;
+  }
 }
 
 .container {

@@ -8047,8 +8047,15 @@ footer {
       width: 50%;
       max-width: 50%; } }
 
+#map {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 60px; }
+
 .btn.btn-primary svg {
   margin-right: 10px; }
+.btn.btn-primary:hover, .btn.btn-primary:active {
+  color: #fff; }
 
 .container {
   padding: 0 30px; }
