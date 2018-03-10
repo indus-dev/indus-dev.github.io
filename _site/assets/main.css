@@ -7719,7 +7719,7 @@ footer {
       padding-top: 4rem; } }
 
 .business-background {
-  background: url("/assets/img/business-background-bg.jpg") no-repeat center center fixed;
+  background: url("/assets/img/business-background-bg.jpg") no-repeat top center fixed;
   background-color: #313E99;
   padding: 2rem 0;
   color: #fff; }
@@ -7881,6 +7881,7 @@ footer {
 
 .salary-benefits {
   background: url("/assets/img/salary-benefits-bg.jpg") no-repeat center center fixed;
+  background-color: #313E99;
   color: #fff;
   padding: 2rem 0;
   text-align: center; }
@@ -7963,7 +7964,8 @@ footer {
     margin-bottom: 25px; }
 
 .locations {
-  background: url("/assets/img/locations-bg.jpg") no-repeat center center fixed;
+  background: url("/assets/img/locations-bg.jpg") no-repeat top center fixed;
+  background-color: #313E99;
   color: #fff;
   padding: 1rem 0; }
   @media (min-width: 768px) {
