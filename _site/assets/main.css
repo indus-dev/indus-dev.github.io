@@ -7723,9 +7723,16 @@ footer {
   background-color: #313E99;
   padding: 2rem 0;
   color: #fff; }
-  @media (min-width: 576px) {
+  @media (max-width: 991px) {
     .business-background {
-      padding: 8rem 0; } }
+      max-width: 100vw; } }
+  @media (min-width: 768px) {
+    .business-background {
+      padding: 8rem 0;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
   .business-background p {
     text-align: justify; }
   @media (min-width: 768px) {
