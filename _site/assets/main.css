@@ -7556,16 +7556,19 @@ footer {
     padding: 2rem 0 1rem 0; }
 
 .home-hero {
-  background: url("/assets/img/home-hero-bg.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url("/assets/img/home-hero-bg.jpg") no-repeat top center fixed;
   color: #fff;
   padding: 8rem 0; }
+  @media (max-width: 991px) {
+    .home-hero {
+      max-width: 100vw; } }
   @media (min-width: 768px) {
     .home-hero {
-      padding: 8rem 0; } }
+      padding: 8rem 0;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
   .home-hero__description {
     flex: 0 0 100%;
     width: 100%;

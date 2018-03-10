@@ -1,14 +1,18 @@
 .home-hero {
-  background: url("/assets/img/home-hero-bg.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url("/assets/img/home-hero-bg.jpg") no-repeat top center fixed;
   color: $white;
   padding: 8rem 0;
 
+  @include media-breakpoint-down(md) {
+    max-width: 100vw;
+  }
+
   @include media-breakpoint-up(md) {
     padding: 8rem 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   &__description {
